@@ -1,0 +1,13 @@
+.menu{
+   display:flex;
+   flex-direction: row;
+   justify-content: end;
+
+}
+.menu ul{
+    display: flex;
+    gap: 57px;
+    margin: 0px;
+    width: 30%;
+    justify-content: end;
+}
