@@ -1,0 +1,35 @@
+
+header {
+    margin: 40px auto 0 auto;
+    width: 90%;
+  }
+
+.navigation{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 720px;
+        margin-bottom: 50px;
+    
+    }
+
+    .nav_link{
+        display: flex;
+        flex-direction: row;
+        gap: 57px;
+        font-size: 24px;
+        list-style-type: none;
+       
+    }
+
+    .nav_link a {
+        color: #000;
+        margin-left: 55px;
+        text-decoration: none;
+     }
+
+     header {
+        margin: 40px auto 0 auto;
+        width: 90%;
+      }
+   

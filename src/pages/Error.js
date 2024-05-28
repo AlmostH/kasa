@@ -1,9 +1,8 @@
 import Header from "../components/Header";
-
-export default function Apropos(){
+export default function Error(){
     return(
         <>
-        <Header />
+      <Header />
         </>
     )
 }
