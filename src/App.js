@@ -1,17 +1,24 @@
-import{ Routes, Route} from "react-router-dom";
+import{ BrowserRouter, Routes, Route} from "react-router-dom";
 import "./css/app.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Apropos from "./pages/Apropos";
+import Error from "./pages/Error";
+import Card from 
+
 
 
 function App() {
   return (
-    <>
-    <Header />
-    <Routes />
-     <Footer /> 
-    </>
-  );
+  
+    <BrowserRouter>
+<Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/apropos" element={<Apropos />} />
+    <Route path="*" element={ <Error />} />
+    </Routes>
+    </BrowserRouter>
+
+  )
 }
 
 export default App;
