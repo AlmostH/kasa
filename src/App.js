@@ -3,7 +3,9 @@ import "./css/app.scss";
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
-import Card from 
+import logements from "./logements.json";
+
+
 
 
 
