@@ -1,0 +1,85 @@
+$primary-color: #FF6060;
+$secondary-color: #F6F6F6;
+$white: #FFFFFF;
+$black: #0000;
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    margin-top:30px;
+    margin-left:270px;
+    width: 1023px;
+   
+
+    &__title {
+        background-color: $primary-color;
+        border-radius: 5px;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $primary-color;
+        height:54px;
+    }
+
+    &__text {
+        height: 0px;
+        opacity: 0;
+        transition:
+            opacity 300ms ease-in-out,
+            height 300ms 150ms ease-in-out;
+    }
+
+}
+
+
+.p {
+    color: black;
+    font-size: 18px;
+    padding: 15px 20px;
+
+    @media screen and (max-width: 850px) {
+        font-size: 12px;
+    }
+
+}
+
+.collapse__title h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+
+    @media screen and (max-width: 850px) {
+        font-size: 13px;
+    }
+}
+
+
+.btn {
+    border: none;
+    background-color: $primary-color;
+    transform: rotate(180deg);
+    transition: transform 300ms ease-in-out;
+}
+
+/* Ajout d'une classe .btn-active pur faire tourner le bouton au clic */
+.btn-active {
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition:
+        height 300ms ease-in-out,
+        opacity 30ms 150ms ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+    .collapse__title img {
+        width: 16px;
+    }
+}
