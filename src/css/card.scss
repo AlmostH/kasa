@@ -2,12 +2,15 @@
 .card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 340px;
   height: 340px;
   margin: 25px 27.5px 25px 27.5px;
   display: flex;
   filter: drop-shadow(0px 0px 0px #F6F6F6);
   border-radius: 25px;
+  background-color:#FF6060 ;
+  
 }
 .cards{
   display: flex;
@@ -17,15 +20,29 @@
   width: 1240px;
   border-radius: 25px;
   margin-top: 43px;
-  margin-left:40px;
+  margin-left:70px;
+ 
   
 }
 .card img{
   border-radius: 10px;
+ 
   width: 340px;
-  height: 340px;
+  height: 100%;
   object-fit: cover;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
   filter: drop-shadow(0px 0px 0px #F6F6F6);
   
+}
+.card p{
+  display: flex;
+  justify-content: center;
+
+  color: white;
+
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+
 }

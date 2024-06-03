@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import LOGO from '../images/logo-white.png'
 import card from"../css/card.scss";
 import logements from "../logements.json";
+import { NavLink } from 'react-router-dom';
 
 
 /*Card.defaultProps = {
@@ -27,7 +28,9 @@ export default Card*/
 
 function Card(){
     return(
+
        <div className='cards'>
+       
         {
             logements && logements.map( logement => {
                 return(
@@ -41,9 +44,11 @@ function Card(){
             })
         }
         </div>
+     
     );
 
 
 
 }
 export default Card
+

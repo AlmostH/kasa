@@ -1,0 +1,17 @@
+.banner_about {
+    margin: 63px auto 0 auto;
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    opacity: 0.3;
+    object-fit: cover;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  
+    background: url(../images/banner_about.png), #000;
+   mix-blend-mode: darken;
+    background-size: 100% 100%;
+}
