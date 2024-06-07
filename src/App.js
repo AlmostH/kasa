@@ -3,6 +3,7 @@ import "./css/app.scss";
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
+import Logement from "./pages/Logement";
 import logements from "./logements.json";
 
 
@@ -17,6 +18,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/apropos" element={<Apropos />} />
     <Route path="*" element={ <Error />} />
+    <Route path="/logement/:id" element={ <Logement />} />
     </Routes>
     </BrowserRouter>
 
