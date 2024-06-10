@@ -3,3 +3,67 @@
     justify-content: center;
 
 }
+.infoLogement {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    }
+    .infoLogement h1{
+        color:#FF6060;
+        font-size: 36px;
+        font-family: Montserrat;
+        margin-left: 50px;
+    }
+
+    .infoLogement p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        margin-left: 50px;;
+    }
+    .tags{
+        display: flex;
+        justify-content: flex-start;
+        gap:10px;
+        margin-bottom: 24px;
+        margin-left: 50px;;
+    }
+    .tags button{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        height: 25px;
+        background-color:#FF6060;
+        border-radius: 10px;
+        border: none;
+    }
+    .hotelogement{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+
+    }
+    .hotelogement span{
+    
+        color: #FF6060;
+
+text-align: right;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+    }
+
+    .hotelogementname {
+        display: flex;
+        flex-direction: column;
+    }
+ .hotelogement img{
+    border-radius: 50%;
+    width:64px;
+
+ }

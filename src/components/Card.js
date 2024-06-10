@@ -5,7 +5,7 @@ import logements from "../logements.json";
 
 
 
-function Card(){
+export default function Card(){
     return(
 
        <div className='cards'>
@@ -33,5 +33,5 @@ function Card(){
 
 
 }
-export default Card
+
 

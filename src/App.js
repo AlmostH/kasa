@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
 import Logement from "./pages/Logement";
-import logements from "./logements.json";
 
 
 

@@ -14,6 +14,7 @@ export default function Routes(){
     <Route path="/apropos" element={<Apropos />} />
     <Route path="*" element={ <Error />} />
     <Route path="/logement/:id" element={ <Logement />} />
+   
     </Routes>
     </BrowserRouter>
     )
