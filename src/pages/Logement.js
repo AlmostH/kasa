@@ -7,13 +7,27 @@ import Carrousel from "../components/Carrousel";
 import { useState } from "react";
 import { useEffect } from "react";
 import Error from "./Error";
+import redStar from "../images/redStar.png";
+import greyStar from "../images/greyStar.png";
 
 
 export default function Logement(){
+
+const id = useParams('id').id;
+const logement = logements.filter((data) => data.id == id);
+if (logement.length === 0) {
+    return <Error />}
+    else {
+        return <ShowLogement />}
+}
+
+export function ShowLogement(){
     const [imageSlider, setImageSlider] = useState([]);
-/* collapses*/
+
     const id = useParams('id').id;
     const logement = logements.filter((data) => data.id == id);
+
+
   const equip = logement[0].equipments.map(equip => 
     <li key={equip.id}>{equip}</li>
     )
@@ -50,10 +64,14 @@ export default function Logement(){
                 
                 </div>
                 <img src={picture} alt="Hôte de l'hébergement" />
-         
-                <div className="rating">
-                <p>{rating}</p>
-                </div>
+                <div className="hoteHebergementNote">
+                            {[...Array(5)].map((star, index) => {
+                                const ratingValue = index + 1;
+                                return (
+                                    <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
+                                )
+                            })}
+                        </div>
             </div>
           <div className="collapseLogement">
                     <Collapse label="Description">
