@@ -33,6 +33,10 @@ $black: #0000;
             opacity 300ms ease-in-out,
             height 300ms 150ms ease-in-out;
     }
+    @media screen and (max-width: 850px) {
+        width: 335px;
+        height: 30px;
+    }
 
 }
 
