@@ -9,8 +9,8 @@ return (
         <img className="logo"src={Logo} />
         </div>
         <ul className="nav_link">
-                <li><NavLink to="/"> Accueil</NavLink></li>
-                <li><NavLink to="/apropos">A propos</NavLink></li>
+        <li> <NavLink to="/" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
+        <li> <NavLink to="/apropos" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
             
         </ul>
       </nav>

@@ -16,14 +16,21 @@ header {
   gap: 57px;
   font-size: 24px;
   list-style-type: none;
-
   a {
     color: #000;
     text-decoration: none;
     text-wrap: nowrap;
   }
+  .activeLink {
+
+    text-decoration: underline;
+    
+  }
+
 }
 
+
+  
 @media screen and (max-width: 900px) {
   header {
     width: 60%;
