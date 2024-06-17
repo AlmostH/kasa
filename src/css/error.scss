@@ -26,3 +26,25 @@ $color_2: black;
 	font-size: 18px;
 	color: $color_2;
 }
+
+@media screen and (max-width: 900px) {
+   .body{
+	max-height:900px ;
+   }
+   .error_title {
+	font-size:96px;
+	width: 198px;
+	height: 99px;
+	}
+	.error_subtitle{
+		
+		font-size: 18px;
+		
+		
+	}
+	.error_return {
+		font-size: 14px;
+
+
+  }
+}

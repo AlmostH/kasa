@@ -72,3 +72,13 @@ $background-color_1: #FF6060;
 		width: auto;
 	}
 }
+@media screen and (max-width: 900px) {
+	.collapseLogement{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.hotelogement{
+		justify-content: center;
+	}
+}
