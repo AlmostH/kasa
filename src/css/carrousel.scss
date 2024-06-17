@@ -43,14 +43,15 @@
     font-size: clamp(14px, 2vw, 18px);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
     .slideCount {
         visibility: hidden;
     }
     .carrousel {
-        width: 91%;
+        width: 90%;
         margin-top: 20px;
         margin-bottom: 0;
+        height: 255px;
     }
 
     .carrouselArrowLeft {

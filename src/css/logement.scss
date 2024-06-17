@@ -43,6 +43,7 @@
     }
     .hotelogement{
         display: flex;
+
         gap: 20px;
         justify-content: flex-end;
 
@@ -65,5 +66,12 @@ font-weight: 500;
  .hotelogement img{
     border-radius: 50%;
     width:64px;
+
+ }
+
+ 
+ .hoteHebergementNote img{
+    height: 36px;
+    width: auto;
 
  }
