@@ -14,14 +14,14 @@ export default function Card(){
             
             logements.map( logement => {
                 return(
-                    <Link to={`/logement/${logement.id}`} key={logement.id}>
+                    
                 <div className ="card" key={logement.title}>
-                 
+                <Link to={`/logement/${logement.id}`} key={logement.id}>
                   <img src= {logement.cover}/>
+                </Link>
                     <p>{logement.title}</p>
                  
                 </div>
-                </Link>
                 )
 
             })
@@ -34,3 +34,4 @@ export default function Card(){
 
 }
 
+ 

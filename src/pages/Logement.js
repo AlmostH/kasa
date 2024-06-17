@@ -28,8 +28,8 @@ export function ShowLogement(){
     const logement = logements.filter((data) => data.id == id);
 
 
-  const equip = logement[0].equipments.map(equip => 
-    <li key={equip.id}>{equip}</li>
+  const equip = logement[0].equipments.map((equip,index) => 
+    <li key={index}>{equip}</li>
     )
 
     useEffect(() => {

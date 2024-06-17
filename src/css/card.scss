@@ -1,63 +1,62 @@
-.card{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 340px;
-  height: 340px;
-  margin: 25px 27.5px 25px 27.5px;
-  display: flex;
-  filter: drop-shadow(0px 0px 0px #F6F6F6);
-  border-radius: 25px;
-  background-color:#FF6060 ;
-  text-decoration: none;
- 
-  
-}
-.cards{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #F6F6F6;
-   width:90%;
-  border-radius: 25px;
-  margin-top: 43px;
-  position: relative;
-  left:50px;
-  
- 
+$color_1: white;
+$font-family_1: Montserrat;
+$background-color_1: #FF6060;
+$background-color_2: #F6F6F6;
+$background-color_3: white;
 
- 
- 
-  
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 340px;
+	height: 340px;
+	margin: 25px 27.5px 25px 27.5px;
+	display: flex;
+	filter: drop-shadow(0px 0px 0px #F6F6F6);
+	border-radius: 25px;
+	background-color: $background-color_1;
+	text-decoration: none;
+	img { border-radius: 10px 10px 0 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+	filter: drop-shadow(0px 0px 0px #F6F6F6);
 }
-.card img{
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
-  filter: drop-shadow(0px 0px 0px #F6F6F6);
-  
+a {
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+	filter: drop-shadow(0px 0px 0px #F6F6F6);
 }
-.card p{
-  display: flex;
-  justify-content: center;
-
-  color: white;
-
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-text-align: center;
-
+p {
+	display: flex;
+	justify-content: center;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
 }
-.cards a{
-  text-decoration: none;
+} 
+	.cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		background-color: $background-color_2;
+		width: 90%;
+		border-radius: 25px;
+		margin-top: 43px;
+		position: relative;
+		left: 50px;
+		a { text-decoration: none;
+	}
 }
-@media screen and (max-width: 900px){
-  .cards{
-    background-color:white;
-  }
-
+@media screen and (max-width: 900px) {
+	.cards {
+		background-color: $background-color_3;
+	}
 }

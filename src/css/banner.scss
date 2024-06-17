@@ -1,48 +1,40 @@
+$color_1: #ffff;
+$font-family_1: "Montserrat";
+$background-color_1: black;
+
 .banner_home {
-    height: 223px;
-    border-radius: 25px;
-    opacity: 0.6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    background: url(../images/banner_background.jpg);
-  
-    /* 100% width 100% height*/
-    background-size: 100% 100%;
-  
-
-  }
-  
-  .banner_wrapper {
-    background-color: black;
-    margin: 63px auto 0 auto;
-    mix-blend-mode: darken;
-    width: 90%;
-    height: 223px;
-    border-radius: 25px;
-
-
-  }
-  
-  .banner_title {
-    font-family: "Montserrat";
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 68px;
-    color: #ffff;
-  
-  }
-
-    
+	height: 223px;
+	border-radius: 25px;
+	opacity: 0.6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	background: url(../images/banner_background.jpg);
+	background-size: 100% 100%;
+}
+.banner_wrapper {
+	background-color: $background-color_1;
+	margin: 63px auto 0 auto;
+	mix-blend-mode: darken;
+	width: 90%;
+	height: 223px;
+	border-radius: 25px;
+}
+.banner_title {
+	font-family: $font-family_1;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 68px;
+	color: $color_1;
+}
 @media screen and (max-width: 900px) {
-    .banner_wrapper, .banner_home {
-      height: 111px;
-    }
-  
-    .banner_title {
-      font-size: 24px;
-    }
-  }
-  
+	.banner_wrapper,.banner_home {
+		height: 111px;
+	}
+
+	.banner_title {
+		font-size: 24px;
+	}
+}
