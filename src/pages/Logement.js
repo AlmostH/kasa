@@ -10,14 +10,18 @@ import Error from "./Error";
 import redStar from "../images/redStar.png";
 import greyStar from "../images/greyStar.png";
 
+{/*  fonction pour rediriger vers 404 si id n'est pas bon*/}
 
 export default function Logement(){
-
+{/*useparams pour recuper l'id de l'url*/}
 const id = useParams('id').id;
+{/* recuperer l'id du logement, verifier si il est identique a l'id de l'url*/}
 const logement = logements.filter((data) => data.id == id);
+{/* si l'id ne correspond pas (pas de data trouvée) envoi sur la page 404*/}
 if (logement.length === 0) {
     return <Error />}
     else {
+         {/* sinon affichage de la page logement*/}
         return <ShowLogement />}
 }
 
@@ -27,11 +31,11 @@ export function ShowLogement(){
     const id = useParams('id').id;
     const logement = logements.filter((data) => data.id == id);
 
-
+    {/* liste des equipements*/}
   const equip = logement[0].equipments.map((equip,index) => 
     <li key={index}>{equip}</li>
     )
-
+   {/* affiche le carrousel */}
     useEffect(() => {
 
         const logement = logements.filter((data) => data.id == id);
@@ -65,7 +69,7 @@ export function ShowLogement(){
                 </div>
                 <img src={picture} alt="Hôte de l'hébergement" />
                 <div className="hoteHebergementNote">
-                            {[...Array(5)].map((star, index) => {
+                        {[...Array(5)].map((star, index) => {
                                 const ratingValue = index + 1;
                                 return (
                                     <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
