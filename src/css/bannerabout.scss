@@ -1,33 +1,36 @@
 $background-color_1: black;
 
-.banner_about {
-	width: 100%;
+.banner{
+	background-color: $background-color_1;
+	margin: 63px auto 0 auto;
+	mix-blend-mode: darken;
+	width: 90%;
+	height: 223px;
+	border-radius: 25px;
+
+&_about {
+
 	height: 223px;
 	border-radius: 25px;
 	opacity: 0.7;
-	object-fit: cover;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
 	background: url(../images/banner_about.png) no-repeat center;
-
+	background-size: cover;
 }
-.banner_wrap {
-	background-color: $background-color_1;
-	margin: 63px auto 0 auto;
-	mix-blend-mode: darken;
-	width: 80%;
-	height: 223px;
-	border-radius: 25px;
 }
 @media screen and (max-width: 900px) {
-	.banner_wrap {
+	.banner {
 		height: 111px;
-		border-radius: 10px;
+
 	}
-	.banner_about {
+	.banner__about {
 		height: 111px;
 		border-radius: 10px;
 	}
 }
+
+
