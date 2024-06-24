@@ -77,14 +77,18 @@ export function ShowLogement(){
                             })}
                         </div>
             </div>
-          <div className="collapseLogement">
+            <div className="collapseWrapper">
+          <div className="collapseDescription">
                     <Collapse label="Description">
                     <p>{logement[0].description} </p>
                     </Collapse>
+            </div>
+                <div className="collapseEquipements">
                     <Collapse label ="Equipements">
                     <ul>{equip}</ul>
                     </Collapse>
-          </div>
+                    </div>
+            </div>
 
          
           <Footer />
