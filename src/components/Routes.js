@@ -12,8 +12,9 @@ export default function Routes(){
 <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/apropos" element={<Apropos />} />
-    <Route path="*" element={ <Error />} />
     <Route path="/logement/:id" element={ <Logement />} />
+    <Route path="*" element={ <Error />} />
+
    
     </Routes>
     </BrowserRouter>
