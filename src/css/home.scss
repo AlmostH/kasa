@@ -1,10 +1,12 @@
-body{
-    max-width: 1440px;
-}
-@media screen and (max-width: 900px) {
-    body{
-        margin-right: 20px;
-       
-    }
-  }
+
+
   
+body{
+    max-height: 952px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }

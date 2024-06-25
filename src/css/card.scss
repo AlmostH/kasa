@@ -65,5 +65,10 @@ p {
 @media screen and (max-width: 900px) {
 	.cards {
 		background-color: $background-color_3;
+		margin-top: 20px;
+		left: 0px;
+		justify-content: center;
+		align-content:center ;
+		width: 100%;
 	}
 }

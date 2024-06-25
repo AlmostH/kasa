@@ -13,8 +13,9 @@ export default function Apropos(){
         <>
 
         <Header />
+        <main>
         <BannerAbout />
-      
+        <div className="collapses">
         <Collapse label="Fiabilité">
                 <p>
                     Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -50,7 +51,8 @@ export default function Apropos(){
 
                 </p>
             </Collapse>
-  
+            </div>
+            </main>
         <Footer />
         </>
     )

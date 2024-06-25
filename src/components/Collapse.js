@@ -34,6 +34,7 @@ function Collapse(props) {
                 </div>
             </div>
         </div>
+
     )
 }
 export default Collapse

@@ -5,7 +5,6 @@ $background-color_1: black;
 
 .banner{
 	
-	height: 223px;
 	border-radius: 25px;
 	height: 223px;
 	display: flex;
@@ -41,16 +40,21 @@ $background-color_1: black;
 }
 }
 @media screen and (max-width:900px) {
+	
+
 	.banner__img {
 		height: 111px;
 		width: 335px;
-		
 	}
 
+	
+
 	.banner__img__title {
-		font-size: 24px;
+		font-size: 20px;
 		text-wrap: wrap;
-		top: 180px;
+		top: 130px;
 	}
+
+	
 }
 }
