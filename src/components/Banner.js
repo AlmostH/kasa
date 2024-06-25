@@ -1,13 +1,16 @@
+import img from "../images/banner_background.jpg";
+
 export default function Banner() {
 
       return (
         <section className="banner">
-          <div className="banner__home"> 
-          <h2  className="banner__title">Chez vous, partout et ailleurs</h2>
-          </div>
+          <img className="banner__img" src={img} alt="chez vous,partout et ailleurs"/>
+          <h1  className="banner__img__title">Chez vous, partout et ailleurs</h1>
+         
         </section>
       );
     
     }
+  
   
   
