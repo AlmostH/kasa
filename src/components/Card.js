@@ -18,8 +18,9 @@ export default function Card(){
                 <div className ="card" key={logement.title}>
                 <Link to={`/logement/${logement.id}`} key={logement.id}>
                   <img src= {logement.cover}/>
+                  <p>{logement.title}</p>
                 </Link>
-                    <p>{logement.title}</p>
+
                  
                 </div>
                 )
