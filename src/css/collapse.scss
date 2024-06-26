@@ -18,7 +18,7 @@ $black: #0000;
     border-radius: 5px;
 
     max-width: 1024px;
-    width: 100%;
+    width: 80%;
  
    
 
@@ -98,5 +98,10 @@ $black: #0000;
 @media screen and (max-width: 850px) {
     .collapse__title img {
         width: 16px;
+    }
+
+    .collapse {
+        margin-left: unset;
+        width: 90%;
     }
 }

@@ -49,33 +49,39 @@ export function ShowLogement(){
         
           <Header />
           <Carrousel imageSlider={imageSlider}/>
-        <div className="infoLogement">
-            <h1>{logement[0].title}</h1>
-            <p>{logement[0].location}</p>
-         
-            <div className="tags">
-                {logement[0].tags.map((tag, index) => {
-                    return (
-                        <button key={index}>{tag}</button>
-                             )
-                        })}
-            </div>
-        </div>
-            <div className="hotelogement">
-                <div className="hotelogementname">
-                <span>{name[0]}</span>
-                <span>{name[1]}</span>
+        
+        <div className="infoLogementWrapper">
+            <div className="infoLogement">
+                <h1>{logement[0].title}</h1>
+                <p>{logement[0].location}</p>
                 
-                </div>
-                <img src={picture} alt="Hôte de l'hébergement" />
-                <div className="hoteHebergementNote">
-                        {[...Array(5)].map((star, index) => {
-                                const ratingValue = index + 1;
-                                return (
-                                    <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
-                                )
+                <div className="tags">
+                    {logement[0].tags.map((tag, index) => {
+                        return (
+                            <button key={index}>{tag}</button>
+                                    )
                             })}
+                </div>
+            </div>
+                <div className="hotelogement">
+                    <div className="hotelogementname">
+                        <span>{name[0]}</span>
+                        <span>{name[1]}</span>
+                        
+                    
+                        <img src={picture} alt="Hôte de l'hébergement" />
                         </div>
+                    <div className="noteWrapper">
+                        <div className="hoteHebergementNote">
+                            {[...Array(5)].map((star, index) => {
+                                    const ratingValue = index + 1;
+                                    return (
+                                        <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
+                                    )
+                                })}
+                        </div>       
+                    </div>
+                </div>
             </div>
             <div className="collapseWrapper">
           <div className="collapseDescription">

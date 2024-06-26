@@ -3,12 +3,34 @@ $color_2: #000;
 $color_3: #FFF;
 $font-family_1: Montserrat;
 $background-color_1: #FF6060;
+
+
 .collapseWrapper{
 	display: flex;
-	
+	margin-bottom: 50px;
+	gap:50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	justify-content: center;
+	max-width:2000px;
 
 
 }
+
+.collapseEquipements{
+	width: 582px;
+	display: flex;
+	
+	
+
+}
+.collapseDescription{
+	width: 582px;
+	display: flex;
+
+}
+
+
 
 
 .infoLogement {
@@ -59,6 +81,7 @@ $background-color_1: #FF6060;
 		font-size: 18px;
 		font-style: normal;
 		font-weight: 500;
+		
 	}
 	img {
 		border-radius: 50%;
@@ -68,20 +91,75 @@ $background-color_1: #FF6060;
 .hotelogementname {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	top:-160px;
+	left:50px;
+
+	img{ 
+         position: relative;
+		 top:-50px;
+		 left:90px;
+	}
+	
+}
+.noteWrapper{
+position: relative;
+top:-60px;
+right:70px;
+
 }
 .hoteHebergementNote {
+
 	img {
 		height: 36px;
 		width: auto;
+		
+
 	}
 }
-@media screen and (max-width: 900px) {
-	.collapseLogement{
+@media screen and (max-width: 850px) {
+	.collapseDescription{
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+
 		
 	}
+
+	.collapseEquipements{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		
+	}
+
+	.infoLogementWrapper {
+		display: flex;
+		flex-direction: column;
+
+	}
 	.hotelogement{
-		justify-content: center;
+		margin-left: 50px;
+		margin-right: 150px;
+	
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+	}
+	.collapseWrapper{
+		display: flex;
+		flex-direction: column;
+		width: 98%;
+		align-items: center;
+		margin-left: unset;
+		margin-left: 50px;
+	}
+	.noteWrapper {
+
+		position:unset;
+	}
+
+	.hotelogementname {
+		position:unset;
 	}
 }
