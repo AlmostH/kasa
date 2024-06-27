@@ -7,8 +7,7 @@ export default function Home(){
         <>
         
           <Header />
-
-          < Banner />
+          <Banner />
           <Card />
           <Footer />
           </>

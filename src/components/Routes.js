@@ -9,14 +9,13 @@ import Logement from "../pages/Logement";
 export default function Routes(){
     return(
 <BrowserRouter>
-<Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/apropos" element={<Apropos />} />
-    <Route path="/logement/:id" element={ <Logement />} />
-    <Route path="*" element={ <Error />} />
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/apropos" element={<Apropos />} />
+        <Route path="/logement/:id" element={ <Logement />} />
+        <Route path="*" element={ <Error />} />
 
-   
     </Routes>
-    </BrowserRouter>
-    )
+</BrowserRouter>
+)
 }
