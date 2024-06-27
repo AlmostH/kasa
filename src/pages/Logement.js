@@ -73,8 +73,10 @@ export function ShowLogement(){
                         </div>
                     <div className="noteWrapper">
                         <div className="hoteHebergementNote">
+                            {/* tableau de 5 éléments dont la valeur correspond a star et son emplacement a index.*/}
                             {[...Array(5)].map((star, index) => {
                                     const ratingValue = index + 1;
+                                    {/*si la valeur de index+1 est < ou = a la note on affiche une étoile rouge sinon une étoile grise*/}
                                     return (
                                         <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
                                     )

@@ -11,6 +11,7 @@ function Collapse(props) {
     }, [])
 
     function handleClick() {
+    {/*inverse la valeur de open au clic*/}
         setOpen(!open)
     }
 
