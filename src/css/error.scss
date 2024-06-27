@@ -12,12 +12,23 @@ $color_2: black;
 	font-weight: 700;
 	font-size: 288px;
 	color: $color_1;
+
+@media screen and (max-width: 900px) {
+	font-size:96px;
+	width: 198px;
+	height: 99px;
+
+}
 }
 .error_subtitle {
 	font-size: 36px;
 	line-height: 26px;
 	color: $color_1;
 	margin: 0;
+	
+@media screen and (max-width: 900px) {
+		font-size: 18px;
+}
 }
 .error_return {
 	margin-bottom: 139px;
@@ -25,26 +36,8 @@ $color_2: black;
 	list-style-type: none;
 	font-size: 18px;
 	color: $color_2;
-}
 
 @media screen and (max-width: 900px) {
-   .body{
-	max-height:900px ;
-   }
-   .error_title {
-	font-size:96px;
-	width: 198px;
-	height: 99px;
-	}
-	.error_subtitle{
-		
-		font-size: 18px;
-		
-		
-	}
-	.error_return {
 		font-size: 14px;
-
-
   }
 }
