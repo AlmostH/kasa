@@ -61,9 +61,8 @@ p {
 		position: relative;
 		left: 65px;
 		
-}
-@media screen and (max-width: 900px) {
-	.cards {
+    @media screen and (max-width: 900px) {
+	
 		background-color: $background-color_3;
 		margin-top: 20px;
 		left: 0px;
