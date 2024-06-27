@@ -10,6 +10,14 @@ $color_1: #FFFFFF;
 	background-size: cover;
 	width: 90%;
 	margin: 43px auto;
+	@media screen and (max-width: 900px) {
+		width: 90%;
+		margin-top: 20px;
+		margin-bottom: 0;
+		height: 255px;
+		border-radius: 10px;
+	}
+	
 }
 .carrouselArrowRight {
 	position: absolute;
@@ -20,6 +28,9 @@ $color_1: #FFFFFF;
 	cursor: pointer;
 	&:active {
 		transform: translateY(-50%) scale(0.9);
+	}
+	@media screen and (max-width: 900px) {
+		height: 30px;
 	}
 }
 .carrouselArrowLeft {
@@ -32,6 +43,9 @@ $color_1: #FFFFFF;
 	&:active {
 		transform: translateY(-50%) scale(0.9);
 	}
+	@media screen and (max-width: 900px) {
+		height: 30px;
+	}
 }
 .slideCount {
 	position: absolute;
@@ -41,22 +55,11 @@ $color_1: #FFFFFF;
 	color: $color_1;
 	font-weight: 500;
 	font-size: clamp(14px, 2vw, 18px);
-}
+
 @media screen and (max-width: 900px) {
-	.slideCount {
 		visibility: hidden;
 	}
-	.carrousel {
-		width: 90%;
-		margin-top: 20px;
-		margin-bottom: 0;
-		height: 255px;
-		border-radius: 10px;
-	}
-	.carrouselArrowLeft {
-		height: 30px;
-	}
-	.carrouselArrowRight {
-		height: 30px;
-	}
 }
+	
+	
+
