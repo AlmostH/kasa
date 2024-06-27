@@ -6,6 +6,10 @@ $background-color_1: black;
 	width: 90%;
 	height: 223px;
 	border-radius: 25px;
+	@media screen and (max-width: 900px) {
+		height: 111px;
+		border-radius: 10px;
+	}
 
 
 &__background {
@@ -19,18 +23,19 @@ $background-color_1: black;
 	align-content: center;
 	background: url(../images/banner_about.png) no-repeat center;
 	background-size: cover;
+	@media screen and (max-width: 900px) {
+		height: 111px;
+		border-radius: 10px;
+	}
+}
+}
 
-}
-}
-@media screen and (max-width: 900px) {
-	.banner__about {
-		height: 111px;
-		border-radius: 10px;
-	}
-	.banner__about__background {
-		height: 111px;
-		border-radius: 10px;
-	}
+
+
+ /******* code non utilisé*********
+ @media screen and (max-width: 900px) {
+	
+	
 	.banner {
 		height: 111px;
 		display: flex;
@@ -43,6 +48,4 @@ $background-color_1: black;
 		align-content: center;
 	}
 
-}
-
-
+}*/
