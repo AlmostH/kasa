@@ -27,7 +27,7 @@ $background-color_1: #FF6060;
 
 .collapseEquipements{
 	width: 582px;
-	display: flex;
+
 	@media screen and (max-width: 850px) {
 		display: flex;
 		flex-direction: column;
@@ -40,7 +40,6 @@ $background-color_1: #FF6060;
 }
 .collapseDescription{
 	width: 582px;
-	display: flex;
 	@media screen and (max-width: 850px) {
 		display: flex;
 		flex-direction: column;
